@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr" >
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+    <title></title>
+    <style >
+      #top{width: 100%;}
+    @font-face {
+        font-family: "BerninaSans";
+        src: url("fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+
+        }
+      #bottom
+      {font-family: "GothamHTF";
+      padding-bottom: 2em;}
+    *{font-family: "BerninaSans";
+      color:#264c4cfa;
+    margin: 0 auto;}
+
+      @media all and (min-width:670px)
+      {
+        #parent
+        {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .tilted_red
+          {position: absolute;
+            top: 20%;
+            right: 10%;
+            font-size: 1.4em;
+            background-color:#822447;
+            color: white;
+            transform: rotate(30deg);
+            /* box-sizing: unset; */
+            padding: 5px;
+            width: 25%;
+            border-radius: 5%;}
+        .content-text
+            {
+              display:flex; justify-content:center; text-align:center; margin:0 auto;
+            }
+       #bottom
+       {
+         display: flex;
+         justify-content: space-around;
+         /* margin-top: 2em; */
+         width: 1170px;
+         margin:0 auto;
+         padding-top: 2em;
+       }
+       #bottom>img
+       {
+
+          border-radius: 50%;
+       }
+       #content
+       {
+
+          background-color: white;
+          height: 25em;
+       }
+       button
+       {text-align: right;
+       }
+       .top-text
+       { position: relative;
+          bottom: 2em;
+          font-size: 1.5em;
+          background-color: #ffffff3d;
+          color: white;
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+
+        #parent>span
+       {
+
+          color:white;
+       }
+      .content-text
+          {
+            display:flex; justify-content:center; text-align:center; margin:0 auto;
+          }
+      }
+      @media all and (max-width:668px)
+      {
+
+        .tilted_red
+        {position: absolute;top: 7%;right: 10%;font-size: 0.7em;background-color:#822447;color: white;transform: rotate(30deg);box-sizing: border-box;width: 25%;border-radius: 5%;}
+
+        #parent
+        {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+
+       #bottom
+       {
+         display: flex;
+         flex-wrap: wrap;
+         /* align-content: center; */
+         /* flex-direction: column; */
+         justify-content: center;
+         align-items: center;
+       }
+       #bottom>img
+       {
+         /* width: 40%; */
+        height: 14em;
+        border-radius: 50%;
+       }
+       #content
+       {
+
+          background-color: white;
+          height: 25em;
+       }
+       button
+       {text-align: right;
+       }
+       .top-text
+       { position: relative;
+          bottom: 2em;
+          font-size: 1em;
+          background-color: #ffffff3d;
+          color: white;
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+      }
+
+      @media all and (max-width:466px)
+      {
+        #bottom
+        {
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: column;
+         align-items: center;
+         align-content: space-between;
+        }
+        .content-text
+          {
+            display:flex; justify-content:center; text-align:center; margin:0 auto; font-size: 1em;
+          }
+        .tilted_red
+        {
+
+          position: absolute;
+            top: 7%;
+            right: 10%;
+            font-size: 0.5em;
+            background-color:#822447;
+            color: white;
+            transform: rotate(30deg);
+            box-sizing: border-box;
+            width: 25%;
+            border-radius: 5%;
+        }
+        #bottom>img
+        {
+
+        }
+
+        #parent
+        {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+
+       #parent>span
+      {
+         height:35%;
+         color:white;
+      }
+
+       #content
+       {
+
+
+          background-color: white;
+          height: 25em;
+       }
+       button
+       {
+         text-align: right;
+       }
+      }
+          </style>
+  </head>
+  <body id="parent">
+    <div style="width:100%;">
+    <img id="top" src="background.jpg" alt="">
+    <div class="tilted_red" >-30% CRYOLIPOLYSE Body Sculpt sur toute formule jusqu’à fin octobre</div>
+    <div class="top-text" >laissez le froid vous soigner....</div>
+
+  </div>
+<div id="content">
+  <div style="width:60%; margin:0 auto;">
+  <div style="display:flex; justify-content:space-around;"><img src="logo_texte.png"><button>prendre RDV</button></div>
+    <h1 style="text-align: center; font-size:1.7em;">
+      Cryothérapie à Corps Entier
+    </h1>
+<div style="clear: both;"></div>
+
+  <h2 class="content-text" >
+    Go Cryo est le premier centre de Cryothérapie à Corps Entier (CCE) de Serre-Chevalier et du Briançonnais.
+  Il a été créé par Léo Meyer, ostéopathe depuis 20 ans, pour permettre aux sportifs
+  et au grand public de bénéficier de cette thérapie puissante et novatrice.
+  </h2>
+</div>
+
+<div id="bottom">
+  <img name="bottom" src="image_gym.jpg" alt="">
+  <img name="bottom" src="image_cryolipolyse.png" alt="">
+  <img name="bottom" src="image_smartphone.jpg" alt="">
+</div>
+</div>
+</body>
+</html>
